@@ -22,22 +22,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    [self updateViews];
 }
 
 - (IBAction)saveButton:(id)sender {
+    BOOL isNewContact = (self.contact == nil);
     
-    
-    
+    if(!isNewContact) {
+        self.contact.name = self.nameTextField.text;
+        self.contact.email = self.emailTextField.text;
+        self.contact.phoneNumber = self.phoneNumberTextField.text;
+    } else {
+        DWPContact *contact = [[[DWPContact alloc]initWithName:self.nameTextField.text email:self.emailTextField.text phoneNumber:self.phoneNumberTextField.text] autorelease];
+        [self.contactController addContact:contact];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - Private Methods
 -(void)updateViews
 {
     if (self.contact) {
-        self.title = @"Update Contact";
+        self.title = self.contact.name;
         self.nameTextField.text = self.contact.name;
         self.emailTextField.text = self.contact.email;
+        self.phoneNumberTextField.text = self.contact.phoneNumber;
         
     } else {
         self.title = @"Create Contact";

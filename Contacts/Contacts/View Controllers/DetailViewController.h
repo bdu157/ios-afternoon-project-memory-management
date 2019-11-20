@@ -10,13 +10,11 @@
 @class ContactController;
 @class DWPContact;
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailViewController : UIViewController
 
-@property (nonatomic, copy) ContactController *contactController;
-@property (nonatomic, copy) DWPContact *contact;
+@property (nonatomic, retain) ContactController *contactController;
+@property (nonatomic, retain) DWPContact *contact;
 
 @end
 
-NS_ASSUME_NONNULL_END

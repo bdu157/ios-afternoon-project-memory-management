@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Table View Controller-->
+        <!--Contacts-->
         <scene sceneID="18n-4l-k1c">
             <objects>
                 <tableViewController id="emt-3Q-5O4" customClass="MainTableViewController" sceneMemberID="viewController">
@@ -42,7 +42,7 @@
                             <outlet property="delegate" destination="emt-3Q-5O4" id="tVG-nP-tEP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="YkI-va-m4d">
+                    <navigationItem key="navigationItem" title="Contacts" id="YkI-va-m4d">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Tik-eE-Ewc">
                             <connections>
                                 <segue destination="QZP-aB-IlY" kind="show" identifier="ToCreateNewContact" id="vPB-4r-GWb"/>
@@ -54,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="1086.9565217391305" y="-9.375"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Title-->
         <scene sceneID="JDL-mV-i7H">
             <objects>
                 <viewController id="QZP-aB-IlY" customClass="DetailViewController" sceneMemberID="viewController">
@@ -97,10 +97,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="czl-wg-8Qk"/>
                     </view>
-                    <navigationItem key="navigationItem" id="tSY-HI-cHf">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="JSi-W2-yGB">
+                    <navigationItem key="navigationItem" title="Title" id="vdJ-f2-SDQ">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="save" id="TWh-gu-HdW">
                             <connections>
-                                <action selector="saveButton:" destination="QZP-aB-IlY" id="ARI-ZF-dwG"/>
+                                <action selector="saveButton:" destination="QZP-aB-IlY" id="pxJ-8E-W6s"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -134,6 +134,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="glO-I7-CRC"/>
+        <segue reference="vPB-4r-GWb"/>
     </inferredMetricsTieBreakers>
 </document>
