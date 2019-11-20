@@ -21,4 +21,11 @@
     return self;
 }
 
+- (void)dealloc {
+    [_name release]; //copy
+    [_email release]; //copy
+    [_phoneNumber release]; //copy
+    [super dealloc];  //only for manual ARC
+}
+
 @end

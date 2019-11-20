@@ -11,7 +11,7 @@
 
 @interface ContactController ()
 
-@property (nonatomic) NSMutableArray<DWPContact *> *internalContacts;
+@property (nonatomic, retain) NSMutableArray<DWPContact *> *internalContacts;
 
 @end
 
@@ -22,6 +22,7 @@
     self = [super init];
     if (self) {
         _internalContacts = [[NSMutableArray alloc] init];
+//        _internalContacts = [@[] mutableCopy];
     }
     return self;
 }
@@ -39,7 +40,13 @@
 
 -(NSArray<DWPContact *> *)contacts
 {
-    return self.internalContacts.copy;
+    return self.internalContacts;
+}
+
+- (void)dealloc {
+    [_internalContacts release]; //retain for internal property and relesae / autorelease if it was not "retain"
+    [_contacts release]; //copy in h file
+    [super dealloc];  //only for manual ARC
 }
 
 @end
