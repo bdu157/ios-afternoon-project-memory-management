@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-
+@class DWPContact;
 
 @interface ContactController : NSObject
+
+@property (nonatomic, readonly, copy) NSArray<DWPContact *> *contacts;
+
+-(void)addContact:(DWPContact *)aContact;
+-(void)removeContact:(DWPContact *)aContact;
 
 @end
 

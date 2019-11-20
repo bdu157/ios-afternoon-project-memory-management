@@ -10,4 +10,15 @@
 
 @implementation DWPContact
 
+- (instancetype)initWithName:(NSString *)name email:(NSString *)email phoneNumber:(NSString *)phoneNumber
+{
+    self = [super init];
+    if (self) {
+        _name = name.copy;
+        _email = email.copy;
+        _phoneNumber = phoneNumber.copy;
+    }
+    return self;
+}
+
 @end

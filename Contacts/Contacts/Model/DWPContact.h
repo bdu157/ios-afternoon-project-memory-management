@@ -9,8 +9,13 @@
 #import <Foundation/Foundation.h>
 
 
-
 @interface DWPContact : NSObject
+
+- (instancetype)initWithName:(NSString *)name email:(NSString *)email phoneNumber:(NSString *)phoneNumber;
+
+@property(nonatomic, copy) NSString *name;
+@property(nonatomic, copy) NSString *email;
+@property(nonatomic, copy) NSString *phoneNumber;
 
 @end
 
