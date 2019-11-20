@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		0B692E232384DD3D006F75BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B692E222384DD3D006F75BD /* AppDelegate.m */; };
 		0B692E262384DD3D006F75BD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B692E252384DD3D006F75BD /* SceneDelegate.m */; };
-		0B692E292384DD3D006F75BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B692E282384DD3D006F75BD /* ViewController.m */; };
 		0B692E2C2384DD3D006F75BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B692E2A2384DD3D006F75BD /* Main.storyboard */; };
 		0B692E2E2384DD3F006F75BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B692E2D2384DD3F006F75BD /* Assets.xcassets */; };
 		0B692E312384DD3F006F75BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B692E2F2384DD3F006F75BD /* LaunchScreen.storyboard */; };
 		0B692E342384DD3F006F75BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B692E332384DD3F006F75BD /* main.m */; };
+		0B692E3F2384E0B8006F75BD /* DWPContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B692E3E2384E0B8006F75BD /* DWPContact.m */; };
+		0B692E432384E0E4006F75BD /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B692E422384E0E4006F75BD /* MainTableViewController.m */; };
+		0B692E462384E0F3006F75BD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B692E452384E0F3006F75BD /* DetailViewController.m */; };
+		0B692E492384E109006F75BD /* ContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B692E482384E109006F75BD /* ContactController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +25,19 @@
 		0B692E222384DD3D006F75BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		0B692E242384DD3D006F75BD /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SceneDelegate.h; path = ../SceneDelegate.h; sourceTree = "<group>"; };
 		0B692E252384DD3D006F75BD /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SceneDelegate.m; path = ../SceneDelegate.m; sourceTree = "<group>"; };
-		0B692E272384DD3D006F75BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0B692E282384DD3D006F75BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0B692E2B2384DD3D006F75BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B692E2D2384DD3F006F75BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B692E302384DD3F006F75BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B692E322384DD3F006F75BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B692E332384DD3F006F75BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
+		0B692E3D2384E0B8006F75BD /* DWPContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWPContact.h; sourceTree = "<group>"; };
+		0B692E3E2384E0B8006F75BD /* DWPContact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWPContact.m; sourceTree = "<group>"; };
+		0B692E412384E0E4006F75BD /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		0B692E422384E0E4006F75BD /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		0B692E442384E0F3006F75BD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0B692E452384E0F3006F75BD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		0B692E472384E109006F75BD /* ContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactController.h; sourceTree = "<group>"; };
+		0B692E482384E109006F75BD /* ContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +70,10 @@
 		0B692E202384DD3D006F75BD /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				0B692E272384DD3D006F75BD /* ViewController.h */,
-				0B692E282384DD3D006F75BD /* ViewController.m */,
-				0B692E2A2384DD3D006F75BD /* Main.storyboard */,
+				0B692E3C2384E0A3006F75BD /* Model */,
+				0B692E4A2384E10C006F75BD /* Model Controller */,
+				0B692E402384E0BE006F75BD /* View Controllers */,
+				0B692E4B2384E328006F75BD /* Storyboard */,
 				0B692E3A2384DD70006F75BD /* App Lifecycle */,
 				0B692E3B2384DD8C006F75BD /* Resources */,
 				0B692E322384DD3F006F75BD /* Info.plist */,
@@ -90,6 +100,43 @@
 				0B692E332384DD3F006F75BD /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0B692E3C2384E0A3006F75BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B692E3D2384E0B8006F75BD /* DWPContact.h */,
+				0B692E3E2384E0B8006F75BD /* DWPContact.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B692E402384E0BE006F75BD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B692E412384E0E4006F75BD /* MainTableViewController.h */,
+				0B692E422384E0E4006F75BD /* MainTableViewController.m */,
+				0B692E442384E0F3006F75BD /* DetailViewController.h */,
+				0B692E452384E0F3006F75BD /* DetailViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0B692E4A2384E10C006F75BD /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B692E472384E109006F75BD /* ContactController.h */,
+				0B692E482384E109006F75BD /* ContactController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		0B692E4B2384E328006F75BD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0B692E2A2384DD3D006F75BD /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B692E292384DD3D006F75BD /* ViewController.m in Sources */,
+				0B692E492384E109006F75BD /* ContactController.m in Sources */,
 				0B692E232384DD3D006F75BD /* AppDelegate.m in Sources */,
 				0B692E342384DD3F006F75BD /* main.m in Sources */,
+				0B692E3F2384E0B8006F75BD /* DWPContact.m in Sources */,
+				0B692E432384E0E4006F75BD /* MainTableViewController.m in Sources */,
 				0B692E262384DD3D006F75BD /* SceneDelegate.m in Sources */,
+				0B692E462384E0F3006F75BD /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C22Z4773SH;
 				INFOPLIST_FILE = Contacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C22Z4773SH;
 				INFOPLIST_FILE = Contacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

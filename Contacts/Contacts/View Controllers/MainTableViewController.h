@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainTableViewController.h
 //  Contacts
 //
 //  Created by Dongwoo Pae on 11/20/19.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+@interface MainTableViewController : UITableViewController
 
 @end
 
